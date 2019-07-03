@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* ========================================================
+ This pattern is downloaded from www.subtlepatterns.com
+ If you need more, that's where to get'em.
+ @mixin ======================================================= */
+body {
+  font-family: 'Nanum Gothic', sans-serif;
+  background: url(../oriental.png);
+}
+
+body .header-logo {
+  padding: 20px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.players-menu {
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  padding: 80px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+.players-menu p {
+  padding: 5px;
+}
+
+.players-menu form {
+  height: 100%;
+  font-size: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+.players-menu select {
+  background-color: rgba(44, 103, 176, 0.1);
+  height: 100%;
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 5px 30px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.players-menu select:focus {
+  outline: 1px solid rgba(111, 111, 111, 0.1);
+}
+
+.players-menu select:focus option {
+  line-height: 250%;
+  font-weight: normal;
+}
+
+.players-menu .number-of-players + button, .players-menu .players-name-wrapper button {
+  border-radius: 6px;
+  background-color: rgba(121, 103, 176, 0.1);
+  line-height: 100%;
+  font-size: 1.2rem;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  margin-left: 5px;
+}
+
+.players-menu .number-of-players + button:focus, .players-menu .players-name-wrapper button:focus {
+  outline: 1px solid rgba(111, 111, 111, 0.1);
+}
+
+.players-menu .input-player-name, .players-menu .submit {
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.players-name-wrapper {
+  padding-top: 20px;
+  display: none;
+}
+
+.players-name-wrapper input {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.board {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.board .player-wrapper {
+  text-align: center;
+  padding: 25px 40px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 10px;
+  -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.board .player-wrapper h2, .board .player-wrapper h3 {
+  padding: 15px;
+}
+
+.board .player-wrapper ol li {
+  background-color: rgba(155, 155, 155, 0.1);
+  background-color: rgba(233, 212, 241, 0.2);
+  margin: 4px 2px;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+  line-height: 150%;
+  position: relative;
+  font-size: 1.3rem;
+  -webkit-transition: .3s ease-out;
+  transition: .3s ease-out;
+}
+
+.board .player-wrapper ol li button {
+  font-size: 1rem;
+  opacity: 0;
+  border: 0;
+  -webkit-transition: .2s;
+  transition: .2s;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  line-height: 100%;
+  padding-left: 10px;
+  outline: 1px solid rgba(1, 1, 1, 0);
+}
+
+.board .player-wrapper ol li:hover button {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.board button {
+  border-radius: 6px;
+  background-color: rgba(121, 103, 176, 0.1);
+  line-height: 100%;
+  font-size: 1.2rem;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  margin-left: 5px;
+}
+
+.board button:focus {
+  outline: 1px solid rgba(111, 111, 111, 0.1);
+}
+
+.board input {
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  font-size: 1.2rem;
+  text-align: center;
+  max-width: 100px;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=main.css.map */
